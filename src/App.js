@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import styled from 'styled-components';
+import Header from './components/Header';
+
+import { Container,Row,Col } from 'react-bootstrap';
+
+const App = () => {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+         <>
+           <Header/>
+         </>
   );
 }
+
+const Pipeline = styled.p`
+   margin-top:10px;
+   color:blue;
+   border: 1px solid green;
+   background-color:blueviolet;
+`;
 
 export default App;
