@@ -24,6 +24,10 @@ const addTask = (task) =>{
   }
 }
 
+const deleteTask = (id) =>{
+  const tarkFinal = tareas.filter((t)=> t.id !== id);
+  setTareas(tarkFinal);
+}
 
   return (
          <>
@@ -36,9 +40,9 @@ const addTask = (task) =>{
                  </Col>
                  <Col>
                  {
-                   tareas ?  
+                   tareas && tareas.length ?  
                     tareas.map((tarea)=>{
-                      return <CardTask  key={tarea.id} titulo={tarea.titulo} descripcion={tarea.descripcion} prioridad={tarea.prioridad}/>
+                      return <CardTask  key={tarea.id} deleteTask={deleteTask} id={tarea.id} titulo={tarea.titulo} descripcion={tarea.descripcion} prioridad={tarea.prioridad}/>
                     })
                     :
                     <NoTask/> 
