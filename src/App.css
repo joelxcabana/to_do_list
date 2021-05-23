@@ -70,6 +70,13 @@ body{
 }
 
 
+.nav{
+  box-shadow: 0px 2px 6px 0px rgb(0 0 0 / 25%) !important;
+  background: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+
 
 @keyframes App-logo-spin {
   from {

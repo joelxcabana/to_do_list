@@ -1,12 +1,12 @@
 import logo from '../img/logo.png';
-import {Container,Row,Col,Navbar,Nav} from 'react-bootstrap';
+import {Navbar,Nav} from 'react-bootstrap';
 
 const Header = () => {
     return ( 
         <>
-       <Navbar bg="light" variant="light" className="justify-content-center"> 
+       <Navbar className="justify-content-center nav"> 
             <Nav className="text-center">
-                        <Nav.Link href="#pricing"><h4>Lista de Tareas</h4></Nav.Link>
+                        <Nav.Link href="#pricing"><img src={logo} width={160} alt="description of image"/></Nav.Link>
             </Nav>
         </Navbar>
         </>

@@ -1,23 +1,32 @@
 import styled,{css} from 'styled-components';
 
+
+const handleColorType = color => {
+    switch (color) {
+      case "1":
+        return " border-left: 8px solid #ab1414";
+      case "2":
+        return "border-left: 8px solid #fcc421";
+      case "3":
+            return "border-left: 8px solid #149dab";
+      default:
+        return "border-left: 8px solid red";
+    }
+};
+
+
+
 const Card = styled.div`
-    border-left: 8px solid red;
+    ${({ color }) => handleColorType(color)};;
     height:auto;
     margin-bottom:15px;
     padding:10px;
     color: #808080 !important;
-   // box-shadow:0px 0px 10px 0px #c4c4c4;
-   // -moz-box-shadow:0px 0px 10px 0px #c4c4c4;
-   // -webkit-box-shadow:0px 0px 10px 0px #c4c4c4;
-
+    border-top: 1px solid #ececec;
+    
     &:hover{
         //background-color: #11a266;
-    }
-
-    ${props => props.microsoft && css`
-    background-color: #9A9A9A;
-    `}
-    
+    }    
 `;
 
 

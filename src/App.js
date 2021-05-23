@@ -1,5 +1,4 @@
 import './App.css';
-import styled from 'styled-components';
 import Header from './components/Header';
 import Boton from './elements/Boton';
 import ModalTask from './components/ModalTask';
@@ -39,7 +38,7 @@ const addTask = (task) =>{
                  {
                    tareas ?  
                     tareas.map((tarea)=>{
-                      return <CardTask titulo={tarea.titulo} descripcion={tarea.descripcion}/>
+                      return <CardTask  key={tarea.id} titulo={tarea.titulo} descripcion={tarea.descripcion} prioridad={tarea.prioridad}/>
                     })
                     :
                     <NoTask/> 
