@@ -28,6 +28,49 @@
   color: #61dafb;
 }
 
+body{
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  background-color: #f4f4f4
+}
+
+.notask {
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #a1a1a1;
+  background-color: #ececec;
+  border-radius: 6px;
+}
+
+.noTask__title{
+  text-align: center;
+  color: #5a5a5a !important;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.cards-content{
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #fafafa !important;
+  border-radius: 8px !important;
+}
+
+.task_no_content{
+  margin-bottom: 20px;
+}
+
+
+.task__title{
+  font-weight: 600;
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -2,15 +2,15 @@
 import Card from '../elements/Card';
 
 
-const CardTaskC = ({titulo,descripcion}) => {
+const CardTask = ({titulo,descripcion}) => {
     return ( 
         <>
         <Card>
-            <div>{titulo}</div>
+            <div className="task__title">{titulo}</div>
             <div>{descripcion}</div>
        </Card>
         </>
      );
 }
  
-export default CardTaskC;
+export default CardTask;

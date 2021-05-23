@@ -5,9 +5,10 @@ const Card = styled.div`
     height:auto;
     margin-bottom:15px;
     padding:10px;
-    box-shadow:0px 0px 10px 0px #c4c4c4;
-    -moz-box-shadow:0px 0px 10px 0px #c4c4c4;
-    -webkit-box-shadow:0px 0px 10px 0px #c4c4c4;
+    color: #808080 !important;
+   // box-shadow:0px 0px 10px 0px #c4c4c4;
+   // -moz-box-shadow:0px 0px 10px 0px #c4c4c4;
+   // -webkit-box-shadow:0px 0px 10px 0px #c4c4c4;
 
     &:hover{
         //background-color: #11a266;
