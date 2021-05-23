@@ -18,7 +18,7 @@ const deleteTarea = (id)=>{
                  <div>{descripcion}</div>
                 </Col>
                 <Col xs={1} >
-                    <button onClick={() => deleteTarea(id)}>x</button>
+                  <i class="fa fa-times icon-accion" aria-hidden="true" onClick={() => deleteTarea(id)}></i>
                 </Col>
             </Row>
            

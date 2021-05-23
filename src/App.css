@@ -77,6 +77,16 @@ body{
 }
 
 
+.icon-accion{
+  cursor: pointer;
+}
+
+
+.title__header{
+  font-weight: 600 !important;
+  font-size: 18px;
+}
+
 
 @keyframes App-logo-spin {
   from {

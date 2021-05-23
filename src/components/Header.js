@@ -6,7 +6,7 @@ const Header = () => {
         <>
        <Navbar className="justify-content-center nav"> 
             <Nav className="text-center">
-                        <Nav.Link href="#pricing"><img src={logo} width={160} alt="description of image"/></Nav.Link>
+                 <Nav.Link href="#pricing"><img src={logo} width={160} alt="description of image"/></Nav.Link>
             </Nav>
         </Navbar>
         </>
